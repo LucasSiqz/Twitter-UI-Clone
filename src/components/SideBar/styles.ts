@@ -16,12 +16,13 @@ export const Container = styled.div`
 export const SearchWrapper = styled.div`
   padding: 10px 24px;
   width: min(399px, 100%);
+
   position: fixed;
   top: 0;
   z-index: 2;
   background: var(--primary);
 
-  min-height: 57px;
+  max-height: 57px;
 `;
 
 export const SearchInput = styled.input`
@@ -68,4 +69,8 @@ export const Body = styled.div`
   flex-direction: column;
   padding: 57px 24px 200px;
   margin-top: 3px;
+
+  > div + div {
+    margin-top: 15px;
+  }
 `;
